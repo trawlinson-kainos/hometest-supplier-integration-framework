@@ -1,0 +1,291 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      },
+      "fullUrl": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf",
+      "resource": {
+        "id": "1d6efc98-78e7-4049-9d4f-e651a95d9727",
+        "name": [
+          {
+            "use": "official",
+            "family": "Doe",
+            "given": [
+              "Alex"
+            ],
+            "text": "Alex Doe"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+447700900000",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "alex.doe@example.com",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "both",
+            "line": [
+              "123 Main Street",
+              "Flat 4B"
+            ],
+            "city": "London",
+            "postalCode": "SW1A 1AA",
+            "country": "United Kingdom"
+          }
+        ],
+        "birthDate": "1990-01-01"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "urn:uuid:e8395ba4-a624-40dc-9adf-d84f61e851a5",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "e8395ba4-a624-40dc-9adf-d84f61e851a5",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest: Screening for Chlamydia trachomatis</div>"
+        },
+        "authoredOn": "2026-10-19T12:00:00+01:00",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "103693007",
+                "display": "Diagnostic procedure",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "442487003",
+              "display": "Screening for Chlamydia trachomatis",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Screening for Chlamydia trachomatis"
+        },
+        "requester": {
+          "reference": "urn:uuid:fde1e02c-ca08-4a2c-8b2c-d3903f484332"
+        },
+        "specimen": [
+          {
+            "reference": "urn:uuid:19f45c72-1a46-4944-bdaf-846d20cbdd4b"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "urn:uuid:e8395ba4-a624-40dc-9adf-d84f61e851a5",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "e8395ba4-a624-40dc-9adf-d84f61e851a5",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest: Gonorrhoea screening</div>"
+        },
+        "authoredOn": "2026-10-19T12:00:00+01:00",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "103693007",
+                "display": "Diagnostic procedure",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1086351000000100",
+              "display": "Gonorrhoea screening",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Gonorrhoea screening"
+        },
+        "requester": {
+          "reference": "urn:uuid:fde1e02c-ca08-4a2c-8b2c-d3903f484332"
+        },
+        "specimen": [
+          {
+            "reference": "urn:uuid:19f45c72-1a46-4944-bdaf-846d20cbdd4b"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "urn:uuid:e8395ba4-a624-40dc-9adf-d84f61e851a5",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "e8395ba4-a624-40dc-9adf-d84f61e851a5",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest: Syphillis screening</div>"
+        },
+        "authoredOn": "2026-10-19T12:00:00+01:00",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "103693007",
+                "display": "Diagnostic procedure",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1086341000000103",
+              "display": "Syphillis screening",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Syphillis screening"
+        },
+        "requester": {
+          "reference": "urn:uuid:fde1e02c-ca08-4a2c-8b2c-d3903f484332"
+        },
+        "specimen": [
+          {
+            "reference": "urn:uuid:19f45c72-1a46-4944-bdaf-846d20cbdd4b"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "urn:uuid:e8395ba4-a624-40dc-9adf-d84f61e851a5",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "e8395ba4-a624-40dc-9adf-d84f61e851a5",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ServiceRequest: Syphillis screening</div>"
+        },
+        "authoredOn": "2026-10-19T12:00:00+01:00",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "103693007",
+                "display": "Diagnostic procedure",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "171121004",
+              "display": "HIV screening (//need to confirm if HIV screening is the correct code)",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "HIV screening"
+        },
+        "requester": {
+          "reference": "urn:uuid:fde1e02c-ca08-4a2c-8b2c-d3903f484332"
+        },
+        "specimen": [
+          {
+            "reference": "urn:uuid:19f45c72-1a46-4944-bdaf-846d20cbdd4b"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      },
+      "fullUrl": "urn:uuid:19f45c72-1a46-4944-bdaf-846d20cbdd4b",
+      "resource": {
+        "resourceType": "Specimen",
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "122554006",
+                "display": "Blood, Capillary"
+              }
+            ]
+          },
+          "quantity": {
+            "system": "http://www.intersystems.com/fhir/system"
+          }
+        },
+        "subject": {
+          "reference": "urn:uuid:49d5b864-9a25-41f0-8011-926d12e9d9cf"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "119297000",
+              "display": "Blood",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
